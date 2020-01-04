@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
   <header className={headerStyles.header}>
     <div className={headerStyles.siteTitle}>
       <h1 style={{ margin: 0 }}>
-        <Link to="/">{siteTitle}</Link>
+        <Link to={`/`}>{siteTitle}</Link>
       </h1>
     </div>
     <div className={headerStyles.navbar}>
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
           <Link style={{ margin: `5px` }} to="/about">About</Link>
           </li>
           <li>
-            <Link style={{ margin: `5px` }} to="/blog">Blog</Link>
+            <Link style={{ margin: `5px` }} to="/blogs">Blogs</Link>
           </li>
           <li>
             <Link style={{ margin: `5px` }} to="/contact">Contact</Link>
