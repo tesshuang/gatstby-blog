@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export const query = graphql`
   query {
@@ -21,9 +22,10 @@ export const query = graphql`
 `
 
 export default ( {data} ) => {
-  console.log(data);
+  // console.log(data);
   return (
   <Layout>
+    <SEO title="Blogs" />
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <h3>{node.frontmatter.title}</h3>
