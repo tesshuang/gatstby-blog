@@ -1,0 +1,14 @@
+.title:hover{
+  box-shadow: none;
+}
+h3 {
+  display: inline;
+  margin-right: 10px;
+  color: #cc964b;
+}
+span {
+  color: black;
+}
+h3, span {
+  margin-bottom: 0;
+}
