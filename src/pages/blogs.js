@@ -33,7 +33,7 @@ export default ( {data} ) => {
     <SEO title="Blogs" />
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
-        <Link to={node.fields.slug} class={blogStyles.title}>
+        <Link to={node.fields.slug} className={blogStyles.title}>
           <h3>{node.frontmatter.title}</h3>
           <span>{node.frontmatter.date}</span>
         </Link>
