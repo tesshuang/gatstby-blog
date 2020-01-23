@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +24,13 @@ export const query = graphql`
         }
       }
     }
+    placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
+      childImageSharp {
+        fixed(width: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `
 
@@ -31,6 +39,10 @@ export default ( {data} ) => {
   return (
   <Layout>
     <SEO title="Blogs" />
+    <Img
+      fixed={data.placeholderImage.childImageSharp.fixed}
+      alt="Gatsby Docs are awesome"
+    />
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <Link to={node.fields.slug} className={blogStyles.title}>
