@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `#100DayofGatsby`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A collection of my thoughts and writings along with the learning of Gatsby.`,
     author: `Tess Huang`,
+    social: [
+      {
+        name: "github",
+        url: "https://github.com/tesshuang",
+      },
+    ],
   },
   plugins: [
     `gatsby-transformer-remark`,
