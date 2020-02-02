@@ -19,9 +19,9 @@ const Contact = ({data}) => (
   <Layout>
     <SEO title="Contact" />
     <h1>Contact me</h1>
-    <Form />
     <p>Data from query: {data.site.siteMetadata.title}</p>
     <p>Let's work together!</p>
+    <Form />
   </Layout>
 )
 

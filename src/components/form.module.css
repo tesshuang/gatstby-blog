@@ -1,0 +1,28 @@
+.form {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.label {
+  display: block;
+  font-size: 16px;
+  color: var(--green);
+}
+
+.input {
+  width: 50%;
+}
+
+.button {
+  display: block;
+  background: var(--green);
+  color: var(--yellow);
+  padding: 0.2rem 1.2rem;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
