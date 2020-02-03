@@ -25,16 +25,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `1rem auto 0`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
+      <div className="flex-wrapper">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `1rem auto 0`,
+            maxWidth: 960,
+            padding: `0px 1.0875rem 1.45rem`,
+            paddingTop: 0,
+            flex: `1 0 auto`,
+          }}
+        >
+          <main>{children}</main>
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
