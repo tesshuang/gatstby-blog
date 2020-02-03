@@ -18,7 +18,6 @@ const IndexPage = () => (
       <Link style={{ margin: `5px` }} to="/about">About</Link>
       <Link style={{ margin: `5px` }} to="/contact/">Contact</Link>
     </div>
-
   </Layout>
 )
 

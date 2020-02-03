@@ -5,7 +5,11 @@ import headerStyles from "./header.module.css"
 import Headroom from 'react-headroom'
 
 const Header = ({ siteTitle }) => (
-  <Headroom>
+  <Headroom
+    style={{
+      boxShadow: '1px 1px 1px rgba(0,0,0,0.25)',
+    }}
+  >
     <header className={headerStyles.header}>
       <div className={headerStyles.siteTitle}>
         <h1 style={{ margin: 0 }}>
