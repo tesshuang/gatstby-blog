@@ -2,8 +2,31 @@
 title: Building with Gatsby
 date: 2020-02-03
 ---
+import Form from "../components/form"
+import Layout from "../components/layout"
+
 # Writing page in MDX
 ### What is MDX
 MDX is Markdown for the component era. It lets you write JSX embedded inside Markdown. Importing and JSX syntax works just like it does in your components. This results in a seamless experience for developers and content authors alike. 
 
-Markdown and more content...
+### Difference between MDX and MD
+MDX is a superset of Markdown. It allows you to write JSX inside markdown. This includes importing and rendering React components!
+
+### Add a JSX component 
+```
+// Use regular import statement in the MDX file
+import Form from "../components/form"
+<Form />
+```
+
+<Form/>
+
+### Define your MDX layout 
+You can not simply wrap all your content in a Layout JSX component in MDX file. What you could do is import and export the *__Layout__* JSX component. It sounds pretty tricky but it's how it's.
+```
+import Layout from "../components/layout"
+Your MDX CONTENT
+export default Layout 
+```
+
+export default Layout
