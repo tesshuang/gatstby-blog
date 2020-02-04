@@ -618,4 +618,5 @@ pre tt:after {
 footer {
   background: var(--yellow);
   padding: 10px 2rem;
+  color: var(--beige);
 }
