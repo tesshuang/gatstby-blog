@@ -39,6 +39,10 @@ export default ( {data} ) => {
   return (
   <Layout>
     <SEO title="Blogs" />
+    <h2>You can do more with MDX</h2>
+    <p>Other than looping from the content blog posts, we can build a Gatsby page directly from MDX. Learn more at: <Link to={`/mdxpage`}>Writing Pages in MDX</Link></p>
+    
+    <h2>Weekly Challenge</h2>
     <Img
       fixed={data.placeholderImage.childImageSharp.fixed}
       alt="Gatsby Docs are awesome"
