@@ -5,7 +5,7 @@ const NetiflyForm = () => {
   return (
     <div className={styles.wrapper}>
       <h3>Stay In Touch</h3>
-      <p>Subscribe to my mailing list to get more tips regarding to learning Gatsby</p>
+      <p>Subscribe to my mailing list to get more tips about learning Gatsby</p>
       <form name="contact" method="POST" data-netlify="true" action="/success" className={styles.netForm}>
         <input type="text" name="name" placeholder="Your name" className={styles.input}/>
         <input type="email" name="email" placeholder="Your email" className={styles.input}/>
