@@ -1,9 +1,3 @@
-:root {
-  --beige: #f8f5ec;
-  --green: #324333;
-  --yellow: #cc964b;
-}
-
 .header {
   display: flex;
   justify-content: space-around;

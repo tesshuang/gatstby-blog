@@ -8,6 +8,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root {
+  --beige: #f8f5ec;
+  --green: #324333;
+  --yellow: #cc964b;
+  --purple: #362066;
+}
 article,
 aside,
 details,
@@ -40,6 +46,7 @@ template {
   display: none;
 }
 a {
+  color: var(--yellow);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -251,6 +258,7 @@ h2 {
   line-height: 1.1;
 }
 h3 {
+  color: var(--yellow);
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -258,8 +266,7 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
+  margin-bottom: 1rem;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -621,6 +628,9 @@ pre tt:after {
   padding: 0.2rem 2rem;
   margin: 1rem 0;
   border-radius: 5px;
+}
+.gatsby {
+  color: var(--purple);
 }
 footer {
   background: var(--yellow);
