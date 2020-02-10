@@ -614,7 +614,14 @@ pre tt:after {
   flex-direction: column;
   height: 100vh;
 }
-
+.submit-button {
+  display: block;
+  background: var(--green);
+  color: var(--yellow);
+  padding: 0.2rem 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
 footer {
   background: var(--yellow);
   padding: 10px 2rem;

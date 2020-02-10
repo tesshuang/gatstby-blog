@@ -1,5 +1,6 @@
 import React from 'react'
-import Container from '../components/container'
+// import Container from '../components/container'
+import Layout from "../components/layout"
 import styles from './about-css-module.module.css'
 import NetlifyFrom from '../components/netlifyForm';
 
@@ -14,7 +15,7 @@ const User = props => (
 )
 
 export default () => (
-  <Container>
+  <Layout>
     <h1>Learn more about CSS</h1>
     <p>Here are a list of people who spend time to learn new tricks about CSS</p>
     <User
@@ -27,7 +28,6 @@ export default () => (
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
       excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
-    <h3>Share your message with me</h3>
     <NetlifyFrom />
-  </Container>
+  </Layout>
 )
