@@ -9,7 +9,7 @@ const NetiflyForm = () => {
       <form name="subscribe" method="POST" data-netlify="true" action="/success" className={styles.netForm}>
         <input type="text" name="name" placeholder="Your name" className={styles.input} required/>
         <input type="email" name="email" placeholder="Your email" className={styles.input} required/>
-        <input type="submit" name="submitBtn" className="submit-button" value="Send" />
+        <button type="submit" className="submit-button">Send</button>
       </form>
       </div>
    );
